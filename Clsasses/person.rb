@@ -1,3 +1,4 @@
+require_relative 'rental'
 require_relative 'nameable'
 
 class Person < Nameable
@@ -8,12 +9,12 @@ class Person < Nameable
     super()
     @id = Random.rand(1..1000)
     @name = name
-     @age = age.to_i
+       @age = age.to_i
     @parent_permission = parent_permission
     @rentals = []
   end
 
-  def correct_name
+ def correct_name
     @name
   end
   private
@@ -26,6 +27,6 @@ class Person < Nameable
   end
 
   def add_rental(book, date)
-    rentals << Rental.new(book, self, date)
+    Rental.new(book, self, date)
   end
 end
