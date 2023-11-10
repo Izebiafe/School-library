@@ -19,8 +19,7 @@ class Student < Person
     '¯(ツ)/¯'
   end
 
-    def to_s
+  def to_s
     "[Student] Name: #{@name}, ID: #{@id}, Age: #{@age}"
   end
-  
 end

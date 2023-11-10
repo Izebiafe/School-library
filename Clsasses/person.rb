@@ -8,7 +8,7 @@ class Person < Nameable
     super()
     @id = Random.rand(1..1000)
     @name = name
-        @age = age
+    @age = age
     @parent_permission = parent_permission
     @rentals = []
   end
@@ -30,7 +30,7 @@ class Person < Nameable
   end
 
   def add_rental(book, date)
-     rentals << Rental.new(book, self, date)
+    rentals << Rental.new(book, self, date)
   end
 
   def to_s
