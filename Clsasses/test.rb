@@ -9,7 +9,7 @@ p book = Book.new('Title', 'Author')
 p person = Person.new(25, 'John Doe')
 
 # Create a rental and associate it with the book and person
-p Rental.new(book, person)
+p Rental.new('2020-06-20', book, person)
 
 # Creating a person
 
